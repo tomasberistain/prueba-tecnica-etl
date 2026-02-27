@@ -373,17 +373,15 @@ def load_charges(df_charges):
 def main():
 
     df = traer_raw_df()
-
     df = transformar(df)
 
     df_charges = df[['id', 'company_id', 'amount', 'status', 'created_at', 'updated_at']]
 
     df_companies_clean = limpiar_nombres_empresas(df)
     df_charges = limpiar_charges(df,df_companies_clean)
-    print("Transacciones")
-    print(df_charges)
 
     load_companies(df_companies_clean)
     load_charges(df_charges)
+
 
 main()
