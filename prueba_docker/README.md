@@ -38,6 +38,10 @@ Archivos principales del ETL:
 
 Comandos para ejecutar
 
+Entrar a la carpeta
+
+	*cd prueba_docker
+	
 Levantar los contenedores de Docker:
 
 	* docker-compose up -d --build
@@ -175,5 +179,6 @@ Puede consultarse como:
 	* SELECT * FROM vistas.daily_company_totals LIMIT 10;
 	
 °°° Sobre el esquema de la base de datos °°°
+
 
 Este se encuentra en el archivo esquema.png. Consta de dos tablas, companies y charges, que tienen PK en company_id y id respectivamente. company_id se hereda mediante una FK a charges desde companies.
