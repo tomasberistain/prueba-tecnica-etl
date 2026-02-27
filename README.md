@@ -53,7 +53,7 @@ Levantar los contenedores de Docker:
 
 	* docker-compose up -d --build
 
-Ejecutar el ETL manualmente (si no se configura para correr automáticamente):
+Ejecutar el ETL manualmente :
 
 	* docker-compose exec app python fuente/carga_data.py
 	* docker-compose exec app python fuente/etl.py
