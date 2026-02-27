@@ -21,6 +21,10 @@ El árbol de directorios del proyecto es:
 	│  └─ raw/
 	│      └─ data_prueba_tecnica.csv
 
+	API numeros naturales/
+	├─ main.py
+
+En la segunda carpeta, API numeros naturales, se encuentra la API de la SECCIÓN 2
 El flujo general es:
 
 	Raw CSV → Tabla cruda en DB (data_raw) → Transformación → Validación → Tablas finales en DB(companies, charges) → Vistas en SQL
