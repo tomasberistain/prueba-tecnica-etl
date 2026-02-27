@@ -46,7 +46,7 @@ Levantar los contenedores de Docker:
 
 	* docker-compose up -d --build
 
-Ejecutar el ETL manualmente (si no se configura para correr automáticamente):
+Ejecutar el ETL manualmente:
 
 	* docker-compose exec app python fuente/carga_data.py
 	* docker-compose exec app python fuente/etl.py
@@ -182,3 +182,4 @@ Puede consultarse como:
 
 
 Este se encuentra en el archivo esquema.png. Consta de dos tablas, companies y charges, que tienen PK en company_id y id respectivamente. company_id se hereda mediante una FK a charges desde companies.
+
